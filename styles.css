@@ -497,11 +497,15 @@ body {
     color: #1e3a8a;
     text-decoration: none;
     font-weight: 600;
-    padding: 12px 24px;
+    padding: 16px 36px;
     border: 2px solid #3b82f6;
     border-radius: 8px;
     transition: all 0.3s ease;
     display: inline-block;
+    font-size: 16px;
+    min-width: 220px;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .learn-more-btn:hover {
@@ -1047,11 +1051,15 @@ body {
     color: #e53e3e;
     text-decoration: none;
     font-weight: 600;
-    padding: 12px 30px;
+    padding: 16px 36px;
     border: 2px solid #e53e3e;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: all 0.3s ease;
     display: inline-block;
+    font-size: 16px;
+    min-width: 220px;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .read-more-btn:hover {
@@ -1566,10 +1574,10 @@ body {
     .form-buttons .btn {
         width: auto !important;
         max-width: 280px !important;
-        min-width: 200px !important;
+        min-width: 220px !important;
         flex: none !important;
-        font-size: 15px;
-        padding: 12px 24px !important;
+        font-size: 16px !important;
+        padding: 16px 36px !important;
         margin: 0 auto;
         display: block !important;
     }
@@ -1682,6 +1690,30 @@ body {
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    .learn-more-btn,
+    .read-more-btn {
+        width: auto !important;
+        max-width: 280px !important;
+        min-width: 220px !important;
+        padding: 16px 36px !important;
+        font-size: 16px !important;
+        margin: 0 auto;
+        display: block !important;
+    }
+    /* Ensure all standard buttons are consistent on mobile (but not form buttons) */
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary, 
+    .hero-buttons .btn-tertiary,
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-outline-blue {
+        width: auto !important;
+        max-width: 280px !important;
+        min-width: 220px !important;
+        padding: 16px 36px !important;
+        font-size: 16px !important;
+        margin: 0 auto;
+        display: block !important;
     }
 }
 
