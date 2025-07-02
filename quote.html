@@ -10,6 +10,9 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIgZmlsbD0iIzI2YTY5YSIgc3Ryb2tlPSIjMDA2OTVjIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cGF0aCBkPSJNOCAyMCBMMjQgMjAgTDIyIDEyIEwxMCAxMiBaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJub25lIi8+CiAgPHBhdGggZD0iTTEwIDEyIEwxMiA4IEwyMCA4IEwyMiAxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMiAxNCBMMjAgMTQiIHN0cm9rZT0iIzI2YTY5YSIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjciLz4KICA8cGF0aCBkPSJNMTEgMTYgTDIxIDE2IiBzdHJva2U9IiMyNmE2OWEiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTEiIGN5PSIyMSIgcj0iMiIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSIyMSIgY3k9IjIxIiByPSIyIiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9IjExIiBjeT0iMjEiIHI9IjEiIGZpbGw9IiMyNmE2OWEiLz4KICA8Y2lyY2xlIGN4PSIyMSIgY3k9IjIxIiByPSIxIiBmaWxsPSIjMjZhNjlhIi8+Cjwvc3ZnPg==">
     <meta name="theme-color" content="#26a69a">
+    
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <style>
         /* Base button style from your CSS file */
@@ -53,6 +56,25 @@
             color: white; /* Text becomes white on hover */
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
+        }
+
+        /* reCAPTCHA Styling */
+        .captcha-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .g-recaptcha {
+            transform: scale(0.9);
+            transform-origin: center;
+        }
+
+        @media (max-width: 768px) {
+            .g-recaptcha {
+                transform: scale(0.8);
+                transform-origin: center;
+            }
         }
     </style>
 </head>
@@ -158,6 +180,12 @@
                         <label for="notes">Describe the damage (optional):</label>
                         <textarea id="notes" name="notes" rows="4" placeholder="Please describe the damage to your auto glass"></textarea>
                     </div>
+                    
+                    <!-- reCAPTCHA -->
+                    <div class="form-group captcha-container">
+                        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                    </div>
+                    
                     <div class="form-buttons">
                         <button type="submit" class="btn btn-primary">Get My Quote</button>
                         <a href="tel:+18582164300" class="btn btn-outline-blue">Call +1 858-216-4300</a>
