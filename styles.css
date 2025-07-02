@@ -1713,29 +1713,26 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    /* Standardize ALL buttons to consistent 280px width on mobile */
     .learn-more-btn,
-    .read-more-btn {
-        width: auto !important;
-        max-width: 280px !important;
-        min-width: 220px !important;
-        padding: 16px 36px !important;
-        font-size: 16px !important;
-        margin: 0 auto;
-        display: block !important;
-    }
-    /* Ensure all standard buttons are consistent on mobile (but not form buttons) */
+    .read-more-btn,
     .hero-buttons .btn-primary,
     .hero-buttons .btn-secondary, 
     .hero-buttons .btn-tertiary,
     .cta-buttons .btn-primary,
-    .cta-buttons .btn-outline-blue {
-        width: auto !important;
+    .cta-buttons .btn-outline-blue,
+    .btn-primary,
+    .btn-secondary,
+    .btn-tertiary,
+    .btn-outline-blue {
+        width: 280px !important;
         max-width: 280px !important;
-        min-width: 220px !important;
+        min-width: 280px !important;
         padding: 16px 36px !important;
         font-size: 16px !important;
         margin: 0 auto;
         display: block !important;
+        box-sizing: border-box !important;
     }
 }
 
