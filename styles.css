@@ -1564,11 +1564,11 @@ body {
         gap: 10px;
     }
     .form-buttons .btn {
-        width: 90%;
-        max-width: 320px;
-        min-width: 0;
+        width: auto;
+        max-width: 280px;
+        min-width: 200px;
         font-size: 15px;
-        padding: 12px 0;
+        padding: 12px 24px;
         margin: 0 auto;
         display: block;
     }
@@ -1601,11 +1601,6 @@ body {
     .form-buttons {
         flex-direction: column;
         align-items: center;
-    }
-    .form-buttons .btn {
-        width: 100%;
-        max-width: none;
-        min-width: 0;
     }
     .footer-content {
         grid-template-columns: 1fr;
