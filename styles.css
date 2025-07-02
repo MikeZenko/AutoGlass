@@ -106,21 +106,36 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 12px 8px 8px;
+    border-radius: 12px;
+}
+
+.logo:hover {
+    background: rgba(59, 130, 246, 0.05);
+    transform: translateY(-1px);
 }
 
 .logo-icon {
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: white;
-    width: 65px;
-    height: 65px;
-    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 24px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(30, 58, 138, 0.3);
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.25);
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.35);
+    transform: translateY(-1px);
 }
 
 .logo-text {
@@ -129,27 +144,47 @@ body {
     line-height: 1.1;
 }
 
-.logo-liberty {
-    font-size: 30px;
-    font-weight: 700;
-    color: #1e3a8a;
-    letter-spacing: 1px;
+.logo-main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
 }
 
-.logo-auto {
-    font-size: 18px;
-    font-weight: 500;
+.logo-company {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e3a8a;
+    letter-spacing: 0.5px;
+    line-height: 0.9;
+}
+
+.logo-center {
+    font-size: 16px;
+    font-weight: 600;
     color: #475569;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    margin-top: -2px;
+}
+
+.logo-location {
+    font-size: 14px;
+    font-weight: 600;
+    color: #059669;
+    letter-spacing: 0.5px;
+    margin-bottom: 1px;
+    background: linear-gradient(135deg, #059669, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .logo-slogan {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
-    color: #3b82f6;
-    letter-spacing: 1px;
-    margin-top: 2px;
-    text-transform: uppercase;
+    color: #6b7280;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    opacity: 0.8;
 }
 
 .nav-menu {
@@ -1504,6 +1539,32 @@ body {
     }
     .logo {
         flex-shrink: 0;
+        padding: 6px 8px 6px 6px;
+        border-radius: 10px;
+        gap: 12px;
+    }
+    
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+    
+    .logo-company {
+        font-size: 22px;
+    }
+    
+    .logo-center {
+        font-size: 14px;
+    }
+    
+    .logo-location {
+        font-size: 12px;
+    }
+    
+    .logo-slogan {
+        font-size: 10px;
     }
     .nav-toggle {
         display: flex;
