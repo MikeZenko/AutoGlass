@@ -1387,6 +1387,27 @@ body {
     padding: 50px 0 25px;
 }
 
+/* Prevent iPhone from auto-styling phone numbers */
+.footer a[href^="tel"],
+.footer *[href^="tel"] {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Override iOS Safari automatic phone number detection */
+.footer p,
+.footer div,
+.footer span {
+    -webkit-text-size-adjust: none;
+    color: white !important;
+}
+
+/* Target any automatically created phone links in footer */
+.footer a:not([class]) {
+    color: white !important;
+    text-decoration: none !important;
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
