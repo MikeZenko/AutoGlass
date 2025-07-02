@@ -1601,6 +1601,21 @@ body {
         padding: 16px 36px !important;
         margin: 0 auto;
         display: block !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Force consistent sizing for form buttons specifically */
+    .form-buttons button.btn,
+    .form-buttons a.btn {
+        width: 220px !important;
+        max-width: 220px !important;
+        min-width: 220px !important;
+        padding: 16px 20px !important;
+        font-size: 16px !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
     .hero-content {
         grid-template-columns: 1fr;
