@@ -112,10 +112,9 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 8px 12px 8px 8px;
+    padding: 8px;
     border-radius: 12px;
 }
 
@@ -124,73 +123,17 @@ body {
     transform: translateY(-1px);
 }
 
-.logo-icon {
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-    color: white;
-    width: 60px;
+.logo-image {
     height: 60px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    position: relative;
-    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.25);
+    width: auto;
+    max-width: 280px;
+    object-fit: contain;
     transition: all 0.3s ease;
 }
 
-.logo:hover .logo-icon {
-    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.35);
+.logo:hover .logo-image {
     transform: translateY(-1px);
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-
-.logo-main {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2px;
-}
-
-.logo-company {
-    font-size: 26px;
-    font-weight: 700;
-    color: #1e3a8a;
-    letter-spacing: 0.5px;
-    line-height: 0.9;
-}
-
-.logo-center {
-    font-size: 16px;
-    font-weight: 600;
-    color: #475569;
-    letter-spacing: 1.5px;
-    margin-top: -2px;
-}
-
-.logo-location {
-    font-size: 14px;
-    font-weight: 600;
-    color: #059669;
-    letter-spacing: 0.5px;
-    margin-bottom: 1px;
-    background: linear-gradient(135deg, #059669, #10b981);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.logo-slogan {
-    font-size: 11px;
-    font-weight: 400;
-    color: #6b7280;
-    letter-spacing: 0.5px;
-    font-style: italic;
-    opacity: 0.8;
+    filter: brightness(1.05);
 }
 
 .nav-menu {
@@ -1550,27 +1493,9 @@ body {
         gap: 12px;
     }
     
-    .logo-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        border-radius: 12px;
-    }
-    
-    .logo-company {
-        font-size: 22px;
-    }
-    
-    .logo-center {
-        font-size: 14px;
-    }
-    
-    .logo-location {
-        font-size: 12px;
-    }
-    
-    .logo-slogan {
-        font-size: 10px;
+    .logo-image {
+        height: 48px;
+        max-width: 240px;
     }
     .nav-toggle {
         display: flex;
