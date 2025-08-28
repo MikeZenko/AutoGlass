@@ -917,10 +917,10 @@ body {
 }
 
 .form-buttons .btn {
-    flex: 0 0 220px; /* Don't grow, don't shrink, fixed width */
-    max-width: 220px;
-    min-width: 220px;
-    width: 220px !important;
+    flex: 0 0 260px; /* Don't grow, don't shrink, fixed width */
+    max-width: 260px;
+    min-width: 260px;
+    width: 260px !important;
     white-space: nowrap;
     text-align: center;
     box-sizing: border-box;
