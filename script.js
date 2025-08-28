@@ -60,6 +60,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Navbar scroll behavior - hide on scroll down, show on scroll up
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+    
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Don't hide navbar if we're at the very top
+            if (currentScrollTop <= 0) {
+                navbar.classList.remove('navbar-hidden');
+                return;
+            }
+            
+            // If scrolling down and we've scrolled more than 100px, hide navbar
+            if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+                navbar.classList.add('navbar-hidden');
+            } 
+            // If scrolling up, show navbar only if scrolled up by at least 50px
+            else if (currentScrollTop < lastScrollTop && (lastScrollTop - currentScrollTop) > 50) {
+                navbar.classList.remove('navbar-hidden');
+            }
+            
+            lastScrollTop = currentScrollTop;
+        });
+    }
+
     // Add navigation highlighting for current page
     highlightCurrentPage();
 

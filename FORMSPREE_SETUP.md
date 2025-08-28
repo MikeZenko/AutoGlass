@@ -22,13 +22,13 @@
 Your website forms are already configured with the correct Formspree endpoints:
 
 ### Quote Requests Form:
-- **Endpoint:** `https://formspree.io/f/xkgbyqog`
-- **File:** `quote.html` (line 67)
+- **Endpoint:** `https://formspree.io/f/xdklkegl`
+- **File:** `quote.html` (line 115)
 - **Configured:** ✅ Ready to receive quote requests
 
 ### Contact Messages Form:
-- **Endpoint:** `https://formspree.io/f/xrbkjyeq`
-- **File:** `contact.html` (line 69)
+- **Endpoint:** `https://formspree.io/f/xandneop`
+- **File:** `contact.html` (line 113)
 - **Configured:** ✅ Ready to receive contact messages
 
 ## Step 4: 🚀 Your Forms Are Ready to Use!
@@ -36,8 +36,8 @@ Your website forms are already configured with the correct Formspree endpoints:
 **Your website is now live and ready to receive customer inquiries!**
 
 ### What happens when customers submit forms:
-1. **Quote requests** → Sent to your email via `xkgbyqog` endpoint
-2. **Contact messages** → Sent to your email via `xrbkjyeq` endpoint  
+1. **Quote requests** → Sent to your email via `xdklkegl` endpoint
+2. **Contact messages** → Sent to your email via `xandneop` endpoint  
 3. **Customer confirmation** → Success popup appears on website
 4. **Email notification** → You receive formatted email with all details
 
