@@ -6,6 +6,9 @@
     <meta name="format-detection" content="telephone=no">
     <title>Services - Auto Glass Center</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -17,7 +20,8 @@
     <!-- SEO -->
     <meta name="description" content="Auto Glass services in San Diego: windshield replacement & chip repair, side and rear windows, ADAS calibration, commercial vehicle glass.">
     <meta name="keywords" content="auto glass services san diego, windshield replacement, windshield chip repair, side window replacement, rear window replacement, ADAS calibration">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.carglass1.com/services.html">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Auto Glass Services | Windshield Replacement & Repair in San Diego">
@@ -25,28 +29,32 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Auto Glass Center">
     <meta property="og:image" content="logo.png">
+    <meta property="og:image:alt" content="Auto Glass Center logo">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Auto Glass Services | Windshield Replacement & Repair in San Diego">
     <meta name="twitter:description" content="Professional auto glass services: windshield replacement, repair, ADAS calibration. Serving San Diego.">
     <meta name="twitter:image" content="logo.png">
+    <meta name="twitter:image:alt" content="Auto Glass Center logo">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <!-- Header -->
     <header class="header">
         <!-- Main Header -->
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Primary">
             <div class="container">
                 <div class="nav-header">
                     <a href="index.html" class="logo">
-                        <img src="logo.png" alt="Auto Glass Center - Your Drive. Our Precision." class="logo-image">
+                        <img src="logo.png" alt="Auto Glass Center - Your Drive. Our Precision." class="logo-image" width="300" height="70">
                     </a>
-                    <button class="nav-toggle" aria-label="Open navigation">
+                    <button class="nav-toggle" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
                         <span></span><span></span><span></span>
                     </button>
                 </div>
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="primary-navigation">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="quote.html">GET QUOTE</a></li>
                     <li><a href="services.html" class="active">SERVICES</a></li>
@@ -56,7 +64,7 @@
         </nav>
     </header>
 
-    <main class="services-page">
+    <main id="main-content" class="services-page">
         <!-- Header Section -->
         <section class="page-header">
             <div class="container">
@@ -210,16 +218,16 @@
                 </div>
                 <div class="footer-center">
                     <div class="omnivari-section">
-                        <img src="omnivari.png" alt="Omnivari Group" class="omnivari-logo">
+                        <img src="omnivari.png" alt="Omnivari Group" class="omnivari-logo" loading="lazy" decoding="async">
                         <span class="omnivari-text">Powered By Omnivari Group</span>
                     </div>
                 </div>
                 <div class="footer-right">
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/SdAutoGlassShop/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                        <a href="https://www.yelp.com/biz/the-auto-glass-repair-san-diego?rr=1" target="_blank" rel="noopener noreferrer"><i class="fab fa-yelp"></i></a>
+                        <a href="https://www.facebook.com/SdAutoGlassShop/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="mailto:autoglassadd@gmail.com" aria-label="Email Auto Glass Center"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=9630+Black+Mountain+Rd+%23K+San+Diego+CA+92126" target="_blank" rel="noopener noreferrer" aria-label="Google Maps directions"><i class="fab fa-google" aria-hidden="true"></i></a>
+                        <a href="https://www.yelp.com/biz/the-auto-glass-repair-san-diego?rr=1" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><i class="fab fa-yelp" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

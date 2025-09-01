@@ -95,8 +95,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('nav-menu-active');
+            const isOpen = navMenu.classList.toggle('nav-menu-active');
             navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
     }
 });

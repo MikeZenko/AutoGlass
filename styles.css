@@ -1789,6 +1789,45 @@ body {
     }
 }
 
+/* Extra-tight layout for small iPhones without affecting desktop */
+@media (max-width: 480px) {
+    body {
+        padding-top: 62px; /* Shorter fixed header offset */
+    }
+    .navbar {
+        padding: 12px 0;
+    }
+    .logo-image {
+        height: 48px;
+        max-width: 220px;
+    }
+    .hero {
+        padding-top: 20px !important;
+        padding-bottom: 60px;
+        min-height: 360px;
+    }
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 12px;
+        line-height: 1.15;
+    }
+    .hero-subtitle {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+    .hero-buttons {
+        gap: 10px;
+    }
+    .hero-buttons-top {
+        gap: 10px;
+    }
+}
+
 /* Make footer .btn-secondary pop with dark background */
 .footer .btn.btn-secondary {
     background: #222 !important;
