@@ -173,6 +173,64 @@
                 left: 50%;
             }
         }
+
+        /* Checkbox Styles */
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .checkbox-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            padding-top: 8px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #374151;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+        #adas-calibration {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            accent-color: #3b82f6;
+            cursor: pointer;
+        }
+
+        .checkbox-container .form-help {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 4px;
+            font-style: italic;
+            line-height: 1.3;
+        }
+
+        /* Mobile checkbox adjustments */
+        @media (max-width: 768px) {
+            .checkbox-group {
+                justify-content: flex-start;
+                margin-top: 15px;
+            }
+            
+            .checkbox-label {
+                font-size: 15px;
+            }
+            
+            .checkbox-container .form-help {
+                font-size: 11px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -258,6 +316,19 @@
                                 <option value="mirrors">Rear / Side Mirrors</option>
                                 <option value="quarter">Quarter</option>
                             </select>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="adas-calibration" name="adas-calibration" value="yes">
+                                <label for="adas-calibration" class="checkbox-label">
+                                    Request ADAS Calibration 
+                                    <span class="tooltip-container">
+                                        <i class="fas fa-question-circle tooltip-icon" aria-label="ADAS Calibration Information"></i>
+                                        <span class="tooltip-text">Advanced Driver Assistance System (ADAS) calibration ensures your safety features like lane departure warning, collision avoidance, and automatic emergency braking work properly after windshield replacement. This service comes at additional cost but is highly recommended for vehicles with these safety systems.</span>
+                                    </span>
+                                </label>
+                                <small class="form-help">Additional cost - Highly recommended for modern vehicles</small>
+                            </div>
                         </div>
                     </div>
                     <div class="form-row">
