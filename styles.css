@@ -1585,10 +1585,12 @@ body {
         background: #f1f5f9;
     }
     .hero {
-        padding-top: 100px !important;
-        padding-bottom: 80px;
-        min-height: 450px;
+        padding-top: 15vh !important;
+        padding-bottom: 5vh;
+        min-height: 85vh;
         align-items: flex-start !important;
+        display: flex;
+        justify-content: center;
     }
     .contact-form {
         padding: 18px 8px;
@@ -1803,10 +1805,12 @@ body {
         max-width: 220px;
     }
     .hero {
-        padding-top: 70px !important;
-        padding-bottom: 60px;
-        min-height: 400px;
+        padding-top: 12vh !important;
+        padding-bottom: 3vh;
+        min-height: 90vh;
         align-items: flex-start !important;
+        display: flex;
+        justify-content: center;
     }
     .hero-title {
         font-size: 32px;
@@ -1820,13 +1824,34 @@ body {
     .hero-description {
         font-size: 16px;
         line-height: 1.5;
-        margin-bottom: 22px;
+        margin-bottom: 3vh;
     }
     .hero-buttons {
         gap: 10px;
     }
     .hero-buttons-top {
         gap: 10px;
+    }
+}
+
+/* Special handling for very short screens (landscape phones) */
+@media (max-width: 768px) and (max-height: 500px) {
+    .hero {
+        padding-top: 8vh !important;
+        padding-bottom: 2vh;
+        min-height: 95vh;
+    }
+    .hero-description {
+        margin-bottom: 2vh;
+        font-size: 14px;
+    }
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .hero-subtitle {
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 }
 
