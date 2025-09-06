@@ -1585,7 +1585,7 @@ body {
         background: #f1f5f9;
     }
     .hero {
-        padding-top: 120px !important;
+        padding-top: 100px !important;
         padding-bottom: 80px;
         min-height: 100vh;
         align-items: center !important;
@@ -1803,7 +1803,7 @@ body {
         max-width: 220px;
     }
     .hero {
-        padding-top: 90px !important;
+        padding-top: 75px !important;
         padding-bottom: 60px;
         min-height: 100vh;
         align-items: center !important;
