@@ -100,6 +100,79 @@
                 transform-origin: left;
             }
         }
+
+        /* Tooltip Styles */
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+            margin-left: 8px;
+        }
+
+        .tooltip-icon {
+            color: #3b82f6;
+            font-size: 16px;
+            cursor: help;
+            transition: color 0.3s ease;
+        }
+
+        .tooltip-icon:hover {
+            color: #1e40af;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 320px;
+            background-color: #1f2937;
+            color: #fff;
+            text-align: left;
+            border-radius: 8px;
+            padding: 12px 16px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -160px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 400;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1f2937 transparent transparent transparent;
+        }
+
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Responsive tooltip adjustments */
+        @media (max-width: 768px) {
+            .tooltip-text {
+                width: 280px;
+                margin-left: -140px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tooltip-text {
+                width: 250px;
+                margin-left: -125px;
+                bottom: 110%;
+                left: 50%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -189,7 +262,12 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="vin">VIN Number (Optional):</label>
+                            <label for="vin">VIN Number (Optional): 
+                                <span class="tooltip-container">
+                                    <i class="fas fa-question-circle tooltip-icon" aria-label="VIN Information"></i>
+                                    <span class="tooltip-text">Your Vehicle Identification Number (VIN) is a unique 17-character code that helps us find the exact glass for your vehicle. You can find it on your windshield (bottom corner), driver's side door frame, dashboard, insurance card, or vehicle registration.</span>
+                                </span>
+                            </label>
                             <input type="text" id="vin" name="vin" placeholder="Enter your 17-digit VIN number" maxlength="17">
                             <small class="form-help">VIN helps us get the exact glass for your vehicle</small>
                         </div>
