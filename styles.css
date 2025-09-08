@@ -1152,6 +1152,18 @@ body {
     align-items: start;
 }
 
+/* Address Link Styling */
+.contact-item a, .footer-address a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover, .footer-address a:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
 .contact-details h2 {
     color: #333;
     margin-bottom: 30px;
@@ -1280,7 +1292,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 2000;
-    animation: fadeIn 0.3s ease;
+    /* animation: fadeIn 0.3s ease; */
 }
 
 .success-content {
@@ -1290,7 +1302,7 @@ body {
     text-align: center;
     max-width: 400px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    animation: slideIn 0.3s ease;
+    /* animation: slideIn 0.3s ease; */
 }
 
 .success-content i {
@@ -1311,6 +1323,7 @@ body {
     line-height: 1.6;
 }
 
+/* Animations disabled to prevent visual issues
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -1326,6 +1339,7 @@ body {
         transform: translateY(0);
     }
 }
+*/
 
 /* Go to Top Button */
 .go-to-top {
