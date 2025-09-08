@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: -40px;
     left: 6px;
-    background: #06a5f2;
+    background: #1e3a8a;
     color: #fff;
     padding: 8px;
     text-decoration: none;
@@ -45,7 +45,7 @@ body {
 
 /* Header Styles */
 .header-top {
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
     padding: 10px 0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -87,7 +87,7 @@ body {
 }
 
 .contact-info i {
-    color: #06a5f2;
+    color: #60a5fa;
     font-size: 16px;
 }
 
@@ -100,7 +100,7 @@ body {
     z-index: 1100;
     background: #fff;
     padding: 18px 0;
-    box-shadow: 0 2px 8px rgba(6,165,242,0.08);
+    box-shadow: 0 2px 8px rgba(30,58,138,0.08);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -149,8 +149,8 @@ body {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: #06a5f2;
-    border-bottom-color: #06a5f2;
+    color: #1e3a8a;
+    border-bottom-color: #3b82f6;
 }
 
 /* Nav header for logo + hamburger row */
@@ -181,7 +181,7 @@ body {
     display: block;
     width: 28px;
     height: 3px;
-    background: #06a5f2;
+    background: #1e3a8a;
     border-radius: 2px;
     transition: all 0.3s cubic-bezier(.4,0,.2,1);
     position: relative;
@@ -201,7 +201,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     color: white;
     padding: 140px 0;
     text-align: center;
@@ -217,7 +217,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(6, 165, 242, 0.8) 0%, rgba(56, 143, 94, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(59, 130, 246, 0.6) 100%);
     z-index: 1;
 }
 
@@ -302,16 +302,16 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: white;
     border: 2px solid transparent;
     box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #388f5e 0%, #06a5f2 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(6, 165, 242, 0.4);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
 }
 
 .btn-secondary {
@@ -323,7 +323,7 @@ body {
 
 .btn-secondary:hover {
     background: rgba(255,255,255,0.95);
-    color: #06a5f2;
+    color: #1e3a8a;
     border-color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255,255,255,0.2);
@@ -348,16 +348,16 @@ body {
 
 .btn-outline-blue {
     background: transparent;
-    color: #06a5f2;
-    border: 2px solid #06a5f2;
+    color: #1e3a8a;
+    border: 2px solid #1e3a8a;
     transition: all 0.3s ease;
 }
 
 .btn-outline-blue:hover {
-    background: #06a5f2;
+    background: #1e3a8a;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(6, 165, 242, 0.4);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
 }
 
 /* Reviews Section */
@@ -462,18 +462,18 @@ body {
 }
 
 .section-tagline {
-    color: #06a5f2;
+    color: #3b82f6;
     font-weight: 600;
     margin-bottom: 24px;
     font-size: 16px;
 }
 
 .learn-more-btn {
-    color: #06a5f2;
+    color: #1e3a8a;
     text-decoration: none;
     font-weight: 600;
     padding: 16px 36px;
-    border: 2px solid #06a5f2;
+    border: 2px solid #3b82f6;
     border-radius: 8px;
     transition: all 0.3s ease;
     display: inline-block;
@@ -484,7 +484,7 @@ body {
 }
 
 .learn-more-btn:hover {
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
@@ -593,7 +593,7 @@ body {
 /* Stats Section */
 .stats-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     color: white;
     text-align: center;
     position: relative;
@@ -652,7 +652,7 @@ body {
 .stat-number {
     font-size: 54px;
     font-weight: 700;
-    color: #06a5f2;
+    color: #60a5fa;
     margin-bottom: 12px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
@@ -874,8 +874,8 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #06a5f2;
-    box-shadow: 0 0 0 4px rgba(6, 165, 242, 0.1);
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
     transform: translateY(-1px);
 }
 
@@ -932,7 +932,7 @@ body {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 24px;
-    color: #06a5f2;
+    color: #3b82f6;
 }
 
 .about-section p {
@@ -1044,7 +1044,7 @@ body {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     color: white;
     padding: 100px 0 60px;
     text-align: center;
@@ -1115,10 +1115,10 @@ body {
 
 .info-item i {
     font-size: 3rem;
-    color: #06a5f2;
+    color: #3b82f6;
     margin-bottom: 20px;
     padding: 20px;
-    background: linear-gradient(135deg, rgba(6, 165, 242, 0.1) 0%, rgba(56, 143, 94, 0.1) 100%);
+    background: rgba(59, 130, 246, 0.1);
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -1160,7 +1160,7 @@ body {
 }
 
 .contact-item a:hover, .footer-address a:hover {
-    color: #06a5f2;
+    color: #1e3a8a;
     text-decoration: underline;
 }
 
@@ -1346,7 +1346,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: white;
     border: none;
     padding: 16px 22px;
@@ -1360,9 +1360,9 @@ body {
 }
 
 .go-to-top:hover {
-    background: linear-gradient(135deg, #388f5e 0%, #06a5f2 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(6, 165, 242, 0.4);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.4);
 }
 
 .go-to-top i {
@@ -1419,7 +1419,7 @@ body {
 }
 
 .footer-nav a:hover {
-    color: #06a5f2;
+    color: #60a5fa;
     transform: translateY(-1px);
 }
 
@@ -1431,7 +1431,7 @@ body {
 
 .footer-info h4 {
     margin-bottom: 12px;
-    color: #06a5f2;
+    color: #60a5fa;
     font-weight: 600;
 }
 
@@ -1487,12 +1487,12 @@ body {
     transition: all 0.3s ease;
     padding: 8px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(6, 165, 242, 0.1) 0%, rgba(56, 143, 94, 0.1) 100%);
+    background: rgba(96, 165, 250, 0.1);
 }
 
 .footer-social a:hover {
-    color: #06a5f2;
-    background: rgba(6, 165, 242, 0.2);
+    color: #60a5fa;
+    background: rgba(96, 165, 250, 0.2);
     transform: translateY(-2px);
 }
 
@@ -1509,7 +1509,7 @@ body {
         right: 0;
         z-index: 1003;
         background: #fff;
-        box-shadow: 0 2px 8px rgba(6,165,242,0.08);
+        box-shadow: 0 2px 8px rgba(30,58,138,0.08);
         transition: transform 0.3s ease-in-out;
     }
     .navbar .container {
@@ -1552,7 +1552,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
-        box-shadow: 0 8px 24px rgba(6,165,242,0.08);
+        box-shadow: 0 8px 24px rgba(30,58,138,0.08);
         padding: 0 0 10px 0;
         display: none;
         z-index: 1001;
@@ -1574,13 +1574,13 @@ body {
         width: 100%;
         padding: 18px 24px;
         font-size: 1.1rem;
-        color: #06a5f2;
+        color: #1e3a8a;
         border: none;
         background: none;
         text-align: left;
     }
     .nav-menu a.active, .nav-menu a:hover {
-        color: #06a5f2;
+        color: #3b82f6;
         background: #f1f5f9;
     }
     .hero {
@@ -1873,7 +1873,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(6, 165, 242, 0.8) 0%, rgba(56, 143, 94, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(59, 130, 246, 0.6) 100%);
     z-index: 1;
 }
 
@@ -1917,7 +1917,7 @@ body {
 
 .hero-features .feature i {
     font-size: 24px;
-    color: #06a5f2;
+    color: #60a5fa;
     margin-bottom: 8px;
 }
 
@@ -1968,7 +1968,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 }
 
 .service-card:hover {
@@ -1979,7 +1979,7 @@ body {
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2059,7 +2059,7 @@ body {
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -2085,12 +2085,12 @@ body {
 
 .step-icon i {
     font-size: 36px;
-    color: #06a5f2;
+    color: #3b82f6;
 }
 
 .step:hover .step-icon {
-    background: linear-gradient(135deg, #dbeafe 0%, #e6f3f0 100%);
-    border-color: #06a5f2;
+    background: #dbeafe;
+    border-color: #3b82f6;
     transform: scale(1.05);
 }
 
@@ -2138,7 +2138,7 @@ body {
 .benefit-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, rgba(6, 165, 242, 0.1) 0%, rgba(56, 143, 94, 0.1) 100%);
+    background: rgba(59, 130, 246, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2148,7 +2148,7 @@ body {
 
 .benefit-icon i {
     font-size: 28px;
-    color: #06a5f2;
+    color: #3b82f6;
 }
 
 .benefit-card h3 {
@@ -2241,8 +2241,8 @@ body {
 }
 
 .area-item:hover {
-    background: linear-gradient(135deg, #dbeafe 0%, #e6f3f0 100%);
-    border-color: #06a5f2;
+    background: #dbeafe;
+    border-color: #3b82f6;
 }
 
 .area-item i {
@@ -2258,7 +2258,7 @@ body {
 /* Final CTA Section */
 .final-cta-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #06a5f2 0%, #388f5e 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     color: white;
     text-align: center;
 }
@@ -2300,7 +2300,7 @@ body {
 
 .cta-feature i {
     font-size: 24px;
-    color: #06a5f2;
+    color: #60a5fa;
     margin-bottom: 8px;
 }
 
@@ -2405,12 +2405,12 @@ body {
 */
 .contact-form-section .btn-secondary {
     background-color: transparent;
-    color: #06a5f2; /* Blue text */
-    border: 2px solid #06a5f2; /* Blue border */
+    color: #1e3a8a; /* Blue text */
+    border: 2px solid #1e3a8a; /* Blue border */
     backdrop-filter: none;
 }
 
 .contact-form-section .btn-secondary:hover {
-    background-color: #06a5f2;
+    background-color: #1e3a8a;
     color: white;
 }
