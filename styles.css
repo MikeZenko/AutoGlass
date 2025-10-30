@@ -1476,7 +1476,7 @@ body {
 }
 
 .omniglass-logo {
-    height: 80px;
+    height: 64px;
     width: auto;
     object-fit: contain;
 }
@@ -1734,7 +1734,7 @@ body {
     }
     
     .omniglass-logo {
-        height: 64px;
+        height: 52px;
     }
     
     .omnivari-text {
