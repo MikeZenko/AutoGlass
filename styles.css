@@ -1460,7 +1460,13 @@ body {
 .omnivari-section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.company-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .omnivari-logo {
@@ -1469,7 +1475,20 @@ body {
     object-fit: contain;
 }
 
+.omniglass-logo {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+}
+
 .omnivari-text {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.powered-by-text {
     color: #cbd5e1;
     font-size: 14px;
     font-weight: 500;
